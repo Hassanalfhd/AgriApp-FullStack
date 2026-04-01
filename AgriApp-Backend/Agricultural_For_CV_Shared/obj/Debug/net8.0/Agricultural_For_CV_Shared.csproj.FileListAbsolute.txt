@@ -1,0 +1,12 @@
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.deps.json
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.pdb
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.csproj.AssemblyReference.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.GeneratedMSBuildEditorConfig.editorconfig
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.AssemblyInfoInputs.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.AssemblyInfo.cs
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.csproj.CoreCompileInputs.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\refint\Agricultural_For_CV_Shared.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.pdb
+H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\ref\Agricultural_For_CV_Shared.dll

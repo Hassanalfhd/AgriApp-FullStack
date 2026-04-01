@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Agricultural_For_CV</name>
+    </assembly>
+    <members>
+        <member name="M:Agricultural_For_CV.Controllers.v1.AuthController.Login(Agricultural_For_CV_Shared.Dtos.UserDtos.LoginDto)">
+            <summary>
+            Authenticates a user and returns a JWT token if successful.
+            </summary>
+            <param name="dto">The login credentials (username/email and password).</param>
+            <returns>JWT token string if login succeeds.</returns>
+            <response code="200">Login successful, returns JWT token.</response>
+            <response code="401">Unauthorized, credentials are invalid.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.AuthController.Register(Agricultural_For_CV_Shared.Dtos.UserDtos.UserDto)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="dto">The user data for registration.</param>
+            <returns>The registered user data if successful.</returns>
+            <response code="201">User registered successfully.</response>
+            <response code="400">Returned when registration fails (e.g., username/email already exists).</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CategoriesController.GetAllCategories">
+            <summary>
+            Retrieves all categories.
+            </summary>
+            <returns>List of categories with full image URLs.</returns>
+            <response code="200">Returns the list of categories successfully.</response>
+            <response code="400">Returned when an error occurs while fetching categories.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CategoriesController.GetCategoryById(System.Int32)">
+            <summary>
+            Retrieves a category by its ID.
+            </summary>
+            <param name="categoryId">The ID of the category.</param>
+            <returns>Category data including full image URL.</returns>
+            <response code="200">Category retrieved successfully.</response>
+            <response code="404">Returned when the category does not exist.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CategoriesController.AddNewCategory(Agricultural_For_CV_Shared.Dtos.CategoriesDtos.CreateCategoryDto)">
+            <summary>
+            Adds a new category.
+            </summary>
+            <param name="dto">Category data including name and image.</param>
+            <returns>The newly created category data.</returns>
+            <response code="201">Category created successfully.</response>
+            <response code="400">Returned when the category could not be created.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CategoriesController.UpdateCategory(Agricultural_For_CV_Shared.Dtos.CategoriesDtos.UpdateCategoryDto)">
+            <summary>
+            Updates an existing category.
+            </summary>
+            <param name="dto">The updated category data.</param>
+            <returns>The updated category data.</returns>
+            <response code="200">Category updated successfully.</response>
+            <response code="400">Returned when the update fails.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CategoriesController.DeleteCategory(System.Int32)">
+            <summary>
+            Deletes a category by its ID.
+            </summary>
+            <param name="categoryId">The ID of the category to delete.</param>
+            <returns>Boolean indicating success of deletion.</returns>
+            <response code="200">Category deleted successfully.</response>
+            <response code="400">Returned when deletion fails.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.GetAllCrops">
+            <summary>
+            Retrieves all crops from the database.
+            Returns a list of crops with detailed information including category and owner.
+            </summary>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> containing a list of <see cref="T:Agricultural_For_CV_Shared.Dtos.CropsDtos.CropResponseDto"/>.
+            If no crops are found, returns an empty list.
+            </returns>
+            <remarks>
+            Example request:
+            GET /api/crops
+            Response:
+            [
+              {
+                "Id": 1,
+                "Name": "Tomato",
+                "CategoryId": 1,
+                "CategoryName": "Vegetables",
+                "Username": "FarmerAli",
+                "OwnerId": 5,
+                "ImagePath": "/images/crops/tomato.jpg",
+                "CreatedAt": "2025-10-13T12:00:00"
+              },
+              ...
+            ]
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.GetAllCropsByUserId(System.Int32)">
+            <summary>
+            Retrieves all crops for a specific user based on their OwnerId.
+            </summary>
+            <param name="ownerId">
+            The ID of the user whose crops are being retrieved.
+            </param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> containing a list of <see cref="T:Agricultural_For_CV_Shared.Dtos.CropsDtos.CropResponseDto"/> belonging to the specified user.
+            Returns an empty list if the user has no crops.
+            </returns>
+            <remarks>
+            Example request:
+            GET /api/crops/user/5
+            Response:
+            [
+              {
+                "Id": 1,
+                "Name": "Tomato",
+                "CategoryId": 1,
+                "CategoryName": "Vegetables",
+                "Username": "FarmerAli",
+                "OwnerId": 5,
+                "ImagePath": "/images/crops/tomato.jpg",
+                "CreatedAt": "2025-10-13T12:00:00"
+              },
+              ...
+            ]
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.GetAllCropsByCategoryId(System.Int32)">
+            <summary>
+            Retrieves crops by their category ID.
+            </summary>
+            <param name="categoryId">The ID of the category.</param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> containing a list of <see cref="T:Agricultural_For_CV_Shared.Dtos.CropsDtos.CropResponseDto"/> in the specified category.
+            Returns an empty list if no crops exist in this category.
+            </returns>
+            <remarks>
+            Example request:
+            GET /api/crops/category/1
+            Response:
+            [
+              {
+                "Id": 1,
+                "Name": "Tomato",
+                "CategoryId": 1,
+                "CategoryName": "Vegetables",
+                "Username": "FarmerAli",
+                "OwnerId": 5,
+                "ImagePath": "/images/crops/tomato.jpg",
+                "CreatedAt": "2025-10-13T12:00:00"
+              }
+            ]
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.GetAllCropsByName(System.String)">
+            <summary>
+            Retrieves crops by their name (partial or full match).
+            </summary>
+            <param name="name">The name of the crop to search for.</param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> containing a list of <see cref="T:Agricultural_For_CV_Shared.Dtos.CropsDtos.CropResponseDto"/> matching the name.
+            Returns an empty list if no crops match.
+            </returns>
+            <remarks>
+            Example request:
+            GET /api/crops/search?name=Tomato
+            Response:
+            [
+              {
+                "Id": 1,
+                "Name": "Tomato",
+                "CategoryId": 1,
+                "CategoryName": "Vegetables",
+                "Username": "FarmerAli",
+                "OwnerId": 5,
+                "ImagePath": "/images/crops/tomato.jpg",
+                "CreatedAt": "2025-10-13T12:00:00"
+              }
+            ]
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.GetCropById(System.Int32)">
+            <summary>
+            Retrieves a crop by its unique identifier.
+            </summary>
+            <param name
+            ="cropId">The unique ID of the crop.</param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> containing the <see cref="T:Agricultural_For_CV_Shared.Dtos.CropsDtos.CropResponseDto"/> if found.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.NotFoundResult"/> if the crop does not exist.
+            </returns>
+            <remarks>
+            Example request:
+            GET /api/crops/1
+            Response:
+            {
+              "Id": 1,
+              "Name": "Tomato",
+              "CategoryId": 1,
+              "CategoryName": "Vegetables",
+              "Username": "FarmerAli",
+              "OwnerId": 5,
+              "ImagePath": "/images/crops/tomato.jpg",
+              "CreatedAt": "2025-10-13T12:00:00"
+            }
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.AddNewCrop(Agricultural_For_CV_Shared.Dtos.CropsDtos.CreateCropDto)">
+            <summary>
+            Creates a new crop and stores it in the database.
+            Returns a 201 Created response with the location of the newly created crop.
+            </summary>
+            <param name="dto">
+            The data transfer object containing the crop details:
+            <list type="bullet">
+            <item><description>Name: The name of the crop.</description></item>
+            <item><description>CategoryId: The ID of the crop category.</description></item>
+            <item><description>OwnerId: The ID of the user who owns the crop.</description></item>
+            <item><description>ImagePath: Optional image file for the crop.</description></item>
+            </list>
+            </param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.CreatedAtActionResult"/> with the newly created crop data and a link to <see cref="M:Agricultural_For_CV.Controllers.v1.CropsController.GetCropById(System.Int32)"/>.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.BadRequestObjectResult"/> if creation fails.
+            </returns>
+            <remarks>
+            Example request:
+            POST /api/crops
+            FormData:
+            - Name: "Tomato"
+            - CategoryId: 1
+            - OwnerId: 5
+            - ImagePath: file (optional)
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.UpdateCrop(Agricultural_For_CV_Shared.Dtos.CropsDtos.UpdateCropDto)">
+            <summary>
+            Updates an existing crop in the database.
+            Returns a 200 OK response with the updated crop data.
+            </summary>
+            <param name="dto">
+            The data transfer object containing the updated crop details:
+            <list type="bullet">
+            <item><description>Id: The unique identifier of the crop to be updated.</description></item>
+            <item><description>Name: The updated name of the crop.</description></item>
+            <item><description>CategoryId: The updated category ID of the crop.</description></item>
+            <item><description>OwnerId: The ID of the user who owns the crop.</description></item>
+            <item><description>ImagePath: Optional new image file for the crop.</description></item>
+            </list>
+            </param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> with the updated crop data if the update succeeds.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.NotFoundResult"/> if the crop with the specified Id does not exist.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.BadRequestObjectResult"/> if the update fails due to validation or other issues.
+            </returns>
+            <remarks>
+            Example request:
+            PUT /api/crops
+            FormData:
+            - Id: 10
+            - Name: "Updated Tomato"
+            - CategoryId: 1
+            - OwnerId: 5
+            - ImagePath: file (optional)
+            </remarks>
+            
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.CropsController.DeleteCrop(System.Int32)">
+            <summary>
+            Deletes a crop from the database by its unique identifier.
+            </summary>
+            <param name="cropId">The unique ID of the crop to be deleted.</param>
+            <returns>
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.NoContentResult"/> (204) if deletion succeeds.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.NotFoundResult"/> (404) if the crop does not exist.
+            Returns <see cref="T:Microsoft.AspNetCore.Mvc.BadRequestObjectResult"/> (400) if deletion fails due to constraints or other errors.
+            </returns>
+            <remarks>
+            Example request:
+            DELETE /api/crops/1
+            </remarks>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.FarmerOrdersController.GetMyOrders(Agricultural_For_CV_Shared.Enums.ItemStatus)">
+            <summary>
+            Retrieves all orders placed by a specific user.
+            </summary>
+            <param name="userId">The ID of the user whose orders are being fetched.</param>
+            <returns>A list of orders belonging to the specified user.</returns>
+            <response code="200">List of user orders retrieved successfully.</response>
+            <response code="500">Server error while fetching the user's orders.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetAllProducts">
+            <summary>
+            Retrieves all products available in the system.
+            </summary>
+            <remarks>
+            This endpoint returns all products with their main images (if available).
+            It constructs full image URLs dynamically based on the current request host.
+            </remarks>
+            <response code="200">Returns the list of products successfully.</response>
+            <response code="404">Returned when no products were found.</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Agricultural_For_CV.Controllers.v1.ProductsController.GetProductsFilter(Agricultural_For_CV_Shared.Dtos.Products.ProductsFilterDto,Microsoft.AspNetCore.Authorization.IAuthorizationService)" -->
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetProducts(System.Int32,System.Int32)">
+            <summary>
+            Endpoint للزوار: جلب المنتجات بشكل Paginated مع تخزين مؤقت في المتصفح
+            </summary>
+            <param name="page">رقم الصفحة المطلوبة (افتراضي = 1)</param>
+            <param name="pageSize">عدد المنتجات في كل صفحة (افتراضي = 20)</param>
+            <returns>PagedResult يحتوي على المنتجات، رقم الصفحة، حجم الصفحة، وعدد العناصر الكلي</returns>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetAdminProducts(System.Int32,System.Int32)">
+            <summary>
+            Endpoint للمسؤول: جلب المنتجات بشكل Paginated بدون أي تخزين مؤقت
+            </summary>
+            <param name="page">رقم الصفحة المطلوبة (افتراضي = 1)</param>
+            <param name="pageSize">عدد المنتجات في كل صفحة (افتراضي = 20)</param>
+            <returns>PagedResult يحتوي على المنتجات، رقم الصفحة، حجم الصفحة، وعدد العناصر الكلي</returns>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetAllUserProducts(Microsoft.AspNetCore.Authorization.IAuthorizationService,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retrieves all products created by a specific user.
+            </summary>
+            <param name="page">The Number of page.</param>
+            <param name="pageSize">The Number of Elements that you want.</param>
+            <param name="userId">The unique identifier of the user.</param>
+            <remarks>
+            Use this endpoint to view all products uploaded by a specific user.
+            The endpoint also attaches full image URLs for display purposes.
+            </remarks>
+            <response code="200">Returns the list of the user's products successfully.</response>
+            <response code="400">Returned when the request parameters are invalid.</response>
+            <response code="404">Returned when the user has no products.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetSearchSuggestions(System.String)">
+            <summary>
+            Provides dynamic search suggestions for product names based on user input.
+            </summary>
+            <param name="query">The partial search term entered by the user (e.g., "tom" → "Tomato").</param>
+            <remarks>
+            This endpoint is designed to enhance the user experience by offering real-time search suggestions
+            while the user types in the search box.  
+            The search is case-insensitive and limited to the top 10 matching product names.
+            </remarks>
+            <response code="200">Returns a list of matching product names successfully.</response>
+            <response code="400">Returned when the query string is null or empty.</response>
+            <response code="404">Returned when no product suggestions are found.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.AddNewProducts(Agricultural_For_CV_Shared.Dtos.Products.ProductToCreate,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Adds a new product to the system.
+            </summary>
+            <param name="dto">The product details to create.</param>
+            <remarks>
+            This endpoint allows you to add a new product, including uploading product images.  
+            The images should be provided using a multipart/form-data request.
+            </remarks>
+            <response code="201">Returned when the product is created successfully.</response>
+            <response code="400">Returned when the product creation fails due to validation or internal issues.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Retrieves a product by its unique identifier (Id).
+            </summary>
+            <param name="id">The unique identifier of the product.</param>
+            <returns>
+            Returns the product data including images (with full URLs) if found.
+            </returns>
+            <response code="200">Returns the product details successfully.</response>
+            <response code="404">Returned when the product with the specified Id does not exist.</response>
+            <response code="400">Returned when the request is invalid.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetByName(System.String)">
+            <summary>
+            Retrieves a product by its name.
+            </summary>
+            <param name="name">The name of the product to search for.</param>
+            <returns>
+            Returns the product data including images (with full URLs) if found.
+            </returns>
+            <response code="200">Returns the product details successfully.</response>
+            <response code="404">Returned when no product with the specified name is found.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.Update(Agricultural_For_CV_Shared.Dtos.Products.ProductToUpdate,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Updates an existing product.
+            </summary>
+            <param name="updateProduct">The updated product data including images.</param>
+            <returns>
+            Returns the updated product data with full image URLs if successful.
+            </returns>
+            <response code="200">Product updated successfully.</response>
+            <response code="400">Returned when validation fails or update fails.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.Delete(System.Int32,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Deletes a product by its unique identifier.
+            </summary>
+            <param name="id">The ID of the product to delete.</param>
+            <returns>
+            Returns a boolean indicating whether the deletion was successful.
+            </returns>
+            <response code="200">Product deleted successfully.</response>
+            <response code="404">Returned when the product with the specified ID does not exist.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.UpdateStatus(System.Int32,Agricultural_For_CV_Shared.Enums.enProductStatus)">
+            <summary>
+            Update the status of a product (e.g., Approve, Reject, Pending).
+            Only admins can perform this action. 1- Pending 2-Approved 3- Rejected 
+            </summary>
+            <param name="id">Product ID.</param>
+            <param name="status">New product status.</param>
+            <returns>Result of the update operation.</returns>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.UsersController.GetAllUsers">
+            <summary>
+            Retrieves all users in the system.
+            </summary>
+            <remarks>
+            Requires authorization. Optionally, can restrict access to Admin roles using [Role("Admin")].
+            Each user's image URL is converted to a full URL.
+            </remarks>
+            <returns>A list of users.</returns>
+            <response code="200">Returns the list of users.</response>
+            <response code="400">Returned when an error occurs while fetching users.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.UsersController.GetUserById(System.Int32,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Retrieves a user by their unique identifier.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+            <returns>The user data including the full image URL.</returns>
+            <response code="200">Returns the user data successfully.</response>
+            <response code="400">Returned when the user does not exist or another error occurs.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.UsersController.UpdateUser(Agricultural_For_CV_Shared.Dtos.UserDtos.UserUpdateDto)">
+            <summary>
+            Updates an existing user's information.
+            </summary>
+            <param name="dto">The updated user data.</param>
+            <returns>The updated user information.</returns>
+            <response code="200">User updated successfully.</response>
+            <response code="400">Returned when the update fails due to invalid data or other issues.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Deletes a user by their unique identifier.
+            </summary>
+            <param name="userId">The ID of the user to delete.</param>
+            <remarks>
+            Only accessible by Admin role.
+            </remarks>
+            <returns>Boolean indicating success of deletion.</returns>
+            <response code="200">User deleted successfully.</response>
+            <response code="400">Returned when deletion fails due to invalid request.</response>
+            <response code="404">Returned when the user does not exist.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.UsersController.SetUserAccountStatus(System.Int32,System.Boolean)">
+            <summary>
+            Sets the status of a user account (activate or deactivate).
+            </summary>
+            <remarks>
+            Only an Admin can perform this action. 
+            Use <paramref name="isActive"/> as true to activate the account, false to deactivate.
+            </remarks>
+            <param name="userId">The ID of the user whose account status will be updated.</param>
+            <param name="isActive">The desired account status (true = active, false = inactive).</param>
+            <returns>
+            Returns <see cref="!:Result&lt;bool&gt;"/> indicating success or failure of the operation.
+            HTTP 200 OK if successful, 400 Bad Request if the operation fails, 404 Not Found if the user does not exist.
+            </returns>
+        </member>
+        <member name="M:NotificationsController.GetUserNotifications(System.Int32)">
+            <summary>
+            جلب جميع الإشعارات الخاصة بمستخدم معين.
+            </summary>
+        </member>
+        <member name="M:NotificationsController.SendNotification(Agricultural_For_CV_Shared.Dtos.Notifications.CreateNotificationDto)">
+            <summary>
+            إرسال إشعار جديد.
+            </summary>
+        </member>
+        <member name="M:NotificationsController.MarkAsRead(System.Int32)">
+            <summary>
+            تعليم الإشعار كمقروء.
+            </summary>
+        </member>
+        <member name="T:Agricultural_For_CV_API.Controllers.OrdersController">
+            <summary>
+            Responsible for handling order-related operations such as creating orders, 
+            retrieving specific order details, and listing user orders.
+            </summary>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.OrdersController.#ctor(Agricultural_For_CV_Shared.Interfaces.IOrderService,Microsoft.Extensions.Logging.ILogger{Agricultural_For_CV_API.Controllers.OrdersController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Agricultural_For_CV_API.Controllers.OrdersController"/> class.
+            </summary>
+            <param name="orderService">Service responsible for managing order logic.</param>
+            <param name="logger">Logger instance for capturing logs and diagnostics.</param>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.OrdersController.CreateOrder(Agricultural_For_CV_Shared.Dtos.OrdersDtos.OrderRequestDto)">
+            <summary>
+            Creates a new order for the user.
+            </summary>
+            <param name="dto">Order details including items, user ID, and payment information.</param>
+            <returns>
+            Returns the created order if successful, 
+            or a validation/error message if something went wrong.
+            </returns>
+            <response code="200">Order created successfully.</response>
+            <response code="400">Invalid input data or validation error.</response>
+            <response code="500">Server error while processing the order.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.OrdersController.GetOrderById(System.Int32)">
+            <summary>
+            Retrieves details of a specific order by its ID.
+            </summary>
+            <param name="id">The unique identifier of the order.</param>
+            <returns>Returns the order details if found, or 404 if not found.</returns>
+            <response code="200">Order found successfully.</response>
+            <response code="404">Order with the given ID not found.</response>
+            <response code="500">Server error while retrieving the order.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.OrdersController.CanceledOrder(System.Int32,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Retrieves details of a specific order by its ID.
+            </summary>
+            <param name="id">The unique identifier of the order.</param>
+            <returns>Returns the order details if found, or 404 if not found.</returns>
+            <response code="200">Order found successfully.</response>
+            <response code="404">Order with the given ID not found.</response>
+            <response code="500">Server error while retrieving the order.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.OrdersController.GetUserOrders(Agricultural_For_CV_Shared.Enums.OrderStatus,Microsoft.AspNetCore.Authorization.IAuthorizationService)">
+            <summary>
+            Retrieves all orders placed by a specific user.
+            </summary>
+            <param name="userId">The ID of the user whose orders are being fetched.</param>
+            <returns>A list of orders belonging to the specified user.</returns>
+            <response code="200">List of user orders retrieved successfully.</response>
+            <response code="500">Server error while fetching the user's orders.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.CreatePayment(Agricultural_For_CV_Shared.Dtos.PaymentsDtos.PaymentRequestDto)">
+            <summary>
+            Creates a new payment.
+            </summary>
+            <param name="dto">The payment request data.</param>
+            <returns>The details of the created payment.</returns>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.GetPaymentById(System.Int32)">
+            <summary>
+            Retrieves a payment by its ID.
+            </summary>
+            <param name="id">The payment ID.</param>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.GetPaymentsByOrder(System.Int32)">
+            <summary>
+            Retrieves all payments associated with a specific order.
+            </summary>
+            <param name="orderId">The order ID.</param>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.UpdateStatus(System.Int32,System.String,System.String)">
+            <summary>
+            Updates the status of an existing payment.
+            </summary>
+            <param name="id">The payment ID.</param>
+            <param name="status">The new payment status (e.g., Paid, Pending, Failed).</param>
+            <param name="transactionId">Optional transaction ID for external payment gateways.</param>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ProductImagesController.GetImages(System.Int32)">
+            <summary>
+            Retrieves all images for a specific product.
+            </summary>
+            <param name="productId">The ID of the product.</param>
+            <returns>A list of images associated with the product.</returns>
+            <response code="200">Images retrieved successfully.</response>
+            <response code="404">No images found for the specified product.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ProductImagesController.UploadSingle(System.Int32,Agricultural_For_CV_Shared.Dtos.ProductsImages.UploadImageDto)">
+            <summary>
+            Uploads a single image for a product.
+            </summary>
+            <param name="productId">The product ID.</param>
+            <param name="dto.file.file">The image file to upload.</param>
+            <param imageOrder="dto.ImageOrder">Optional: the display order of the image.</param>
+            <returns>The uploaded image details.</returns>
+            <response code="200">Image uploaded successfully.</response>
+            <response code="400">Failed to upload image due to invalid data.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ProductImagesController.UploadMultiple(System.Int32,Microsoft.AspNetCore.Http.IFormFile[])">
+            <summary>
+            Uploads multiple images for a product at once.
+            </summary>
+            <param name="productId">The product ID.</param>
+            <param name="files">The array of image files to upload.</param>
+            <returns>The details of all uploaded images.</returns>
+            <response code="200">Images uploaded successfully.</response>
+            <response code="400">Failed to upload images due to invalid data.</response>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ProductImagesController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific image of a product.
+            </summary>
+            <param name="imageId">The ID of the image to delete.</param>
+            <returns>Success or failure result of the deletion.</returns>
+            <response code="200">Image deleted successfully.</response>
+            <response code="404">Image not found.</response>
+        </member>
+        <member name="T:Agricultural_For_CV_API.Controllers.ReportsController">
+            <summary>
+            Controller responsible for handling reporting operations for both Farmers and Admins.
+            Implements high-performance data retrieval and structured logging.
+            </summary>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ReportsController.GetFarmerMonthlySales(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retrieves the monthly financial and sales report for a specific farmer.
+            Optimized with SARGable queries and Covering Indexes at the database level.
+            </summary>
+            <param name="farmerId">The unique identifier of the farmer.</param>
+            <param name="year">The target year for the report.</param>
+            <param name="month">The target month for the report.</param>
+            <returns>A detailed summary of revenue, commission, and items sold.</returns>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ReportsController.GetTopFarmers(System.Int32)">
+            <summary>
+            Retrieves the top-performing farmers based on total revenue generated.
+            Accessible by Admin users to monitor platform growth.
+            </summary>
+            <param name="count">Number of top farmers to retrieve (Default is 5).</param>
+            <returns>A list of top farmers with their respective sales performance metrics.</returns>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ReportsController.GetSalesGrowth">
+            <summary>
+            Retrieves the Month-over-Month (MoM) sales growth analysis.
+            Uses SQL Window Functions (LAG) for high-performance trend analysis.
+            </summary>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ReportsController.GetLowStockAlerts(System.Nullable{System.Int32},System.Int32)">
+            <summary>
+            Retrieves products with low stock levels.
+            Can be filtered by FarmerId or used by Admin to see all alerts.
+            </summary>
+        </member>
+        <member name="M:Agricultural_For_CV_API.Controllers.ReportsController.GetCategoryAnalysis">
+            <summary>
+            Provides a business intelligence (BI) report on sales distribution across different categories.
+            Useful for Admin to identify the most profitable product categories.
+            </summary>
+            <returns>A list of categories with total revenue, units sold, and order counts.</returns>
+        </member>
+    </members>
+</doc>

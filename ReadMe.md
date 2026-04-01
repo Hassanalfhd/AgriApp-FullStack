@@ -60,29 +60,26 @@ To get the full ecosystem running locally, follow these steps:
 
 ### 1️⃣ Clone the Repository
 
-````bash
+```bash
 git clone <your-repo-url>
 
-###2️⃣ Backend Setup
-```bash
+2️⃣ Backend Setup
 cd AgriApp-Backend
 # Update ConnectionStrings in appsettings.json
 dotnet ef database update --project Agricultural_For_CV_DAL --startup-project Agricultural_For_CV
 dotnet run --project Agricultural_For_CV
 
-###3️⃣ Frontend Setup
-```bash
+3️⃣ Frontend Setup
 cd AgriApp-Frontend
 npm install
 npm run dev
 
-###👨‍💻 Author
-**Hasan Ameen Alfahd**
+👨‍💻 Author
+Hasan Ameen Alfahd
 Full-Stack Web Developer & IT Specialist
 
 A passionate developer dedicated to building scalable, user-centric web applications. This project serves as a comprehensive demonstration of my skills in modern web architecture and full-stack integration.
 
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Hassanalfhd)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassanalfhd)
-````
+```

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Agricultural_For_CV.props" />
+</Project>

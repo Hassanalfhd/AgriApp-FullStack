@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "H2oR2UNz9+Y=",
+  "success": true,
+  "projectFilePath": "H:\\Agricultural_For_CV\\Agricultural_For_CV_Shared\\Agricultural_For_CV_Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hassan\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\hassan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\hassan\\.nuget\\packages\\sixlabors.imagesharp\\3.1.12\\sixlabors.imagesharp.3.1.12.nupkg.sha512",
+    "C:\\Users\\hassan\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

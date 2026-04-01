@@ -1,0 +1,15 @@
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\bin\Release\net8.0\Agricultural_For_CV_DAL.deps.json
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\bin\Release\net8.0\Agricultural_For_CV_DAL.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\bin\Release\net8.0\Agricultural_For_CV_DAL.pdb
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\bin\Release\net8.0\Agricultural_For_CV_Shared.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\bin\Release\net8.0\Agricultural_For_CV_Shared.pdb
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.csproj.AssemblyReference.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.AssemblyInfoInputs.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.AssemblyInfo.cs
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.csproj.CoreCompileInputs.cache
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricult.F5564C06.Up2Date
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\refint\Agricultural_For_CV_DAL.dll
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\Agricultural_For_CV_DAL.pdb
+H:\Agricultural_For_CV\Agricultural_For_CV_DAL\obj\Release\net8.0\ref\Agricultural_For_CV_DAL.dll
