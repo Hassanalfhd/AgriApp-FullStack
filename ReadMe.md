@@ -58,10 +58,9 @@ This repository contains two primary modules:
 
 To get the full ecosystem running locally, follow these steps:
 
-### 1️⃣ Clone the Repository
-
 ```bash
-git clone <your-repo-url>
+### 1️⃣ Clone the Repository
+git clone https://github.com/Hassanalfhd/AgriApp-FullStack.git
 
 2️⃣ Backend Setup
 cd AgriApp-Backend
@@ -73,6 +72,7 @@ dotnet run --project Agricultural_For_CV
 cd AgriApp-Frontend
 npm install
 npm run dev
+```
 
 👨‍💻 Author
 Hasan Ameen Alfahd
