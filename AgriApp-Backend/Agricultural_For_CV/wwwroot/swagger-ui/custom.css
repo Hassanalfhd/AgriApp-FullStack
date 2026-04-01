@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #1e1e2f !important;
+    color: #ffffff;
+}
+.topbar {
+    background-color:#2d2d44 !important;
+}
+
+.swagger-ui, .opblock {
+    background-color: #2d2d44 !important;
+    border-color :#444 !important;
+}
+
+
+.swagger-ui, .btn{
+    background-color: #4b8bf4 !important;
+    border-color: white !important;
+}
+  
+.swagger-ui input, .swagger-ui select, .swagger-ui textarea {
+        background-color: #3b3b54 !important;
+        color: white !important;
+        border: 1px solid #555 !important;
+
+}
+
+    
+.swagger-ui .opblock-summary-method {
+        border-radius: 4px !important;
+        text-shadow: none !important;
+
+}
+    
+.swagger-ui .microlight {
+        background-color: #161625 !important;
+        color: #a9b7c6 !important;
+    
+}

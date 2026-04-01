@@ -1,0 +1,15 @@
+## Visual Studio
+bin/
+obj/
+.vs/
+UserSecrets/
+appsettings.Development.json
+
+## SQL Server
+*.mdf
+*.ldf
+
+## Packages
+*.user
+*.userosscache
+*.sln.docstates

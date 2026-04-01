@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ألوان وخطوط افتراضية */
+body {
+  @apply bg-neutral-100 text-neutral-800 font-sans;
+}
+
+/* أزرار احترافية */
+.btn {
+  @apply px-4 py-2 rounded-xl shadow-button text-white bg-primary hover:bg-secondary transition-colors;
+}
+
+/* بطاقات */
+.card {
+  @apply p-6 rounded-xl shadow-card bg-white;
+}

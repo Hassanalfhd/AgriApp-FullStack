@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+
+namespace Agricultural_For_CV_Shared.Dtos.CropsDtos
+{
+    public class CreateCropDto
+    {
+        public string Name { get; set; } = string.Empty;
+        public int CategoryId { get; set; }
+        public int OwnerId { get; set; }
+        public IFormFile? ImagePath { get; set; }
+    }
+
+}

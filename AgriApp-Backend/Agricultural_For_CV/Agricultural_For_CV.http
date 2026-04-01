@@ -1,0 +1,6 @@
+@Agricultural_For_CV_HostAddress = http://localhost:5171
+
+GET {{Agricultural_For_CV_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
