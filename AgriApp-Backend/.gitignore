@@ -1,0 +1,52 @@
+# --- [.NET Core / .NET 8] ---
+bin/
+obj/
+out/
+
+# --- [User-specific files] ---
+*.user
+*.userosscache
+*.sln.docstates
+
+# --- [Visual Studio Cache & Settings] ---
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opendb
+*.dbmdl
+
+# --- [Configuration - IMPORTANT] ---
+# لا ترفع ملفات الإعدادات التي تحتوي على كلمات مرور حقيقية
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# --- [SQL Server & Local Databases] ---
+*.mdf
+*.ldf
+*.ndf
+*.sdf
+*.db
+*.sqlite
+
+# --- [Entity Framework Core] ---
+# استبعاد ملفات اللوغ والسكربتات المؤقتة
+*.log
+EFCore.pg.log
+
+# --- [Publish Output] ---
+publish/
+dist/
+
+# --- [Operating System Files] ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
