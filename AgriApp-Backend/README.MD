@@ -60,7 +60,7 @@ The project is built using **Layered Architecture** principles to ensure strict 
 
 - **Audit:** `IAuditLogService` To take snapshot for every operation in system
 
-````bash
+```bash
 public async Task LogAsync(AuditLogDto dto)
 {
     var log = new AuditLogs
@@ -78,9 +78,10 @@ public async Task LogAsync(AuditLogDto dto)
 
     await _repo.AddAsync(log);
 }
+```
 
 - **Image Cleanup Service : ** To clean up the images that marked is deleted in background.
- `public class ImageCleanupService : BackgroundService`
+  `public class ImageCleanupService : BackgroundService`
 - ** Logging System:** Every step in the system is logged.
 
 ---
@@ -95,23 +96,14 @@ public async Task LogAsync(AuditLogDto dto)
 
 ---
 
-
-## 🛣 Key API Endpoints
-
-![APIs Endpoints](./screenshots/swagger.gif)
-![Controllers](./screenshots/controllers.gif)
-
-
----
-
-
 ## ⚙️ Setup & Installation
 
 ### Prerequisites
 
+```bash
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-
+```
 
 ---
 
@@ -121,19 +113,20 @@ Update `appsettings.json`:
 
 ```json
 {
- "ConnectionStrings": {
-   "DefaultConnection": "Server=.;Database=AgriculturalDB_For_CV;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True;"
- },
- "AppSettings": {
-   "SecretKey": "YOUR_SECRET_KEY",
-   "Issuer": "AgriculturalApp",
-   "Audience": "AgriculturalUsers"
- }
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=.;Database=AgriculturalDB_For_CV;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True;"
+  },
+  "AppSettings": {
+    "SecretKey": "YOUR_SECRET_KEY",
+    "Issuer": "AgriculturalApp",
+    "Audience": "AgriculturalUsers"
+  }
 }
-
+```
 
 ## 📦 Database Migration
-```bash
+
+````bash
 dotnet ef database update --project Agricultural_For_CV_DAL --startup-project Agricultural_For_CV
 
 ## 🚀 Running the Application
@@ -143,16 +136,15 @@ dotnet run --project Agricultural_For_CV
 ## 🧪 Testing
 ```bash
 dotnet test
+````
 
 ## 👨‍💻 Author
 
-### Hasan Ameen Hasan Al-fahd
-
-
-## 👨‍💻 Author
-
-**Hasan Ameen Alfahd** *IT Specialist & Full-Stack Developer*
+**Hasan Ameen Alfahd** **IT Specialist & Full-Stack Developer**.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hassan-alfahd)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassanalfhd)
-````
+
+```
+
+```
