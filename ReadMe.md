@@ -80,6 +80,6 @@ Full-Stack Web Developer & IT Specialist
 
 A passionate developer dedicated to building scalable, user-centric web applications. This project serves as a comprehensive demonstration of my skills in modern web architecture and full-stack integration.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Hassanalfhd)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hassan-alfahd)
+
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassanalfhd)
-```

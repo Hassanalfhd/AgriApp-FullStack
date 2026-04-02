@@ -145,7 +145,7 @@ Custom guards:
 
 ## 📂 Project Structure
 
-![Featuer-Based](./screenshots/Featuer-based.gif)
+![Featuer-Based](./Screenshots/Featuer-based.gif)
 
 ---
 
@@ -155,16 +155,16 @@ Custom guards:
 
 ### Dashboard Overview
 
-![Admin Dashboard](./screenshots/AdminDashboard.gif)
-![Admin Dashboard](./screenshots/AdminDashboardForMobile.gif)
+![Admin Dashboard](./Screenshots/AdminDashboard.gif)
+![Admin Dashboard](./Screenshots/AdminDashboardForMobile.gif)
 
 ### User Management
 
-![User Management](./screenshots/UserManagmentByAdmin.png)
+![User Management](./Screenshots/UserManagmentByAdmin.png)
 
 ### Products Management
 
-![Products Management](./screenshots/ProdcutPageInDashboardByAdmin.png)
+![Products Management](./Screenshots/ProductPageInDashboardByAdmin.png)
 
 ### 🌾 Farmer Dashboard
 
@@ -175,51 +175,51 @@ Custom guards:
 
 - View and manage orders with clear status indicators
 - Display quantity, price, user, and date information
-  ![Farmer Orders](./screenshots/FarmerDashboard.gif)
+  ![Farmer Orders](./Screenshots/FarmerDashboard.gif)
 
 ### Orders Management
 
-![Farmer Orders](./screenshots/FarmerOrdersDashboard.png)
+![Farmer Orders](./Screenshots/FarmerOrdersDashboard.png)
 
 ### Accepted Orders
 
-![Accepted Orders](./screenshots/FarmerOrdersAcceptedDashboard.png)
+![Accepted Orders](./Screenshots/FarmerOrdersAcceptedDashboard.png)
 
 ### Add Product
 
-![Add Product](./screenshots/AddNewProduct.png)
+![Add Product](./Screenshots/AddNewProduct.png)
 
 ### Delete Product
 
-![Delete Product](./screenshots/DeleteProduct.png)
+![Delete Product](./Screenshots/DeleteProduct.png)
 
 ## 🛒 Customer Experience
 
 ### Account Creation
 
-![Create Account](./screenshots/CreateAccountOfCustomer.gif)
+![Create Account](./Screenshots/CreateAccountOfCustomer.gif)
 
 ### Browse Products and Placed Order
 
-![Products](./screenshots/CustomerPlacedOrder.gif)
+![Products](./Screenshots/CustomerPlacedOrder.gif)
 
 ### Customer Orders
 
-![Pagination](./screenshots/CustomerOrders.gif)
+![Pagination](./Screenshots/CustomerOrders.gif)
 
 ## 🎨 UI & Layout
 
-### Sidebar (Expanded)
-
-![Sidebar Expanded](./screenshots/SideBarOfDashboard_1.png)
-
 ### Sidebar (Collapsed)
 
-![Sidebar Collapsed](./screenshots/SideBarOfDashboard_2.png)
+![Sidebar Expanded](./Screenshots/SideBarOfDashboard_1.png)
+
+### Sidebar (Expanded)
+
+![Sidebar Collapsed](./Screenshots/SideBarOfDashboard_2.png)
 
 ### User Profile
 
-![User Profile](./screenshots/UserProfile.png)
+![User Profile](./Screenshots/UserProfile.png)
 
 ## ▶️ Getting Started
 
