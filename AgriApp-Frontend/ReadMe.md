@@ -209,11 +209,11 @@ Custom guards:
 
 ## 🎨 UI & Layout
 
-### Sidebar (Expanded)
+### Sidebar (Collapsed)
 
 ![Sidebar Expanded](./Screenshots/SideBarOfDashboard_1.png)
 
-### Sidebar (Collapsed)
+### Sidebar (Expanded)
 
 ![Sidebar Collapsed](./Screenshots/SideBarOfDashboard_2.png)
 
