@@ -75,8 +75,8 @@ npm run dev
 ```
 
 👨‍💻 Author
-Hasan Ameen Alfahd
-Full-Stack Web Developer & IT Specialist
+**Hasan Ameen Alfahd**
+_Full-Stack Web Developer & IT Specialist_
 
 A passionate developer dedicated to building scalable, user-centric web applications. This project serves as a comprehensive demonstration of my skills in modern web architecture and full-stack integration.
 
