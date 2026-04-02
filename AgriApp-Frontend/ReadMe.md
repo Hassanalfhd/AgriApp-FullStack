@@ -164,7 +164,7 @@ Custom guards:
 
 ### Products Management
 
-![Products Management](./Screenshots/ProdcutPageInDashboardByAdmin.png)
+![Products Management](./Screenshots/ProductPageInDashboardByAdmin.png)
 
 ### 🌾 Farmer Dashboard
 
