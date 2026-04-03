@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Agricultural_For_CV_Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+905d7d9923e06d57ff866cebb1b4a7e1dac8a5cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77442d01ebbd159512ebf3d1da406bbeb0c7e39d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Agricultural_For_CV_Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Agricultural_For_CV_Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

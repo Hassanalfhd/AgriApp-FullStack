@@ -288,6 +288,71 @@
             <response code="200">List of user orders retrieved successfully.</response>
             <response code="500">Server error while fetching the user's orders.</response>
         </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.NotificationsController.GetUserNotifications(System.Int32)">
+            <summary>
+            Retrieves all notifications for a specific user.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+            <returns>A list of notifications for the user.</returns>
+            <response code="200">Returns the list of notifications.</response>
+            <response code="404">If no notifications are found for the user.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.NotificationsController.SendNotification(Agricultural_For_CV_Shared.Dtos.Notifications.CreateNotificationDto)">
+            <summary>
+            Sends a new notification to a user.
+            </summary>
+            <param name="dto">The notification data to be sent.</param>
+            <returns>The created notification details.</returns>
+            <response code="200">Returns the created notification.</response>
+            <response code="400">If the request data is invalid or sending fails.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.NotificationsController.MarkAsRead(System.Int32)">
+            <summary>
+            Marks a notification as read.
+            </summary>
+            <param name="id">The unique identifier of the notification.</param>
+            <returns>A message indicating the operation result.</returns>
+            <response code="200">If the notification was successfully marked as read.</response>
+            <response code="404">If the notification is not found.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.PaymentsController.CreatePayment(Agricultural_For_CV_Shared.Dtos.PaymentsDtos.PaymentRequestDto)">
+            <summary>
+            Creates a new payment.
+            </summary>
+            <param name="dto">The payment request data.</param>
+            <returns>The details of the created payment.</returns>
+            <response code="200">Payment created successfully.</response>
+            <response code="400">Invalid payment data or creation failed.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.PaymentsController.GetPaymentById(System.Int32)">
+            <summary>
+            Retrieves a payment by its ID.
+            </summary>
+            <param name="id">The unique payment ID.</param>
+            <returns>The payment details if found.</returns>
+            <response code="200">Payment found and returned successfully.</response>
+            <response code="404">Payment with the specified ID not found.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.PaymentsController.GetPaymentsByOrder(System.Int32)">
+            <summary>
+            Retrieves all payments associated with a specific order.
+            </summary>
+            <param name="orderId">The order ID to filter payments.</param>
+            <returns>A list of payments related to the specified order.</returns>
+            <response code="200">Payments retrieved successfully.</response>
+            <response code="404">No payments found for the specified order.</response>
+        </member>
+        <member name="M:Agricultural_For_CV.Controllers.v1.PaymentsController.UpdateStatus(System.Int32,System.String,System.String)">
+            <summary>
+            Updates the status of an existing payment.
+            </summary>
+            <param name="id">The unique payment ID.</param>
+            <param name="status">The new payment status. Allowed values: Paid, Pending, Failed.</param>
+            <param name="transactionId">Optional transaction ID for external payment gateways.</param>
+            <response code="200">Payment status updated successfully.</response>
+            <response code="400">Invalid status value provided.</response>
+            <response code="404">Payment with the specified ID not found.</response>
+        </member>
         <member name="M:Agricultural_For_CV.Controllers.v1.ProductsController.GetAllProducts">
             <summary>
             Retrieves all products available in the system.
@@ -469,21 +534,6 @@
             HTTP 200 OK if successful, 400 Bad Request if the operation fails, 404 Not Found if the user does not exist.
             </returns>
         </member>
-        <member name="M:NotificationsController.GetUserNotifications(System.Int32)">
-            <summary>
-            جلب جميع الإشعارات الخاصة بمستخدم معين.
-            </summary>
-        </member>
-        <member name="M:NotificationsController.SendNotification(Agricultural_For_CV_Shared.Dtos.Notifications.CreateNotificationDto)">
-            <summary>
-            إرسال إشعار جديد.
-            </summary>
-        </member>
-        <member name="M:NotificationsController.MarkAsRead(System.Int32)">
-            <summary>
-            تعليم الإشعار كمقروء.
-            </summary>
-        </member>
         <member name="T:Agricultural_For_CV_API.Controllers.OrdersController">
             <summary>
             Responsible for handling order-related operations such as creating orders, 
@@ -538,33 +588,6 @@
             <returns>A list of orders belonging to the specified user.</returns>
             <response code="200">List of user orders retrieved successfully.</response>
             <response code="500">Server error while fetching the user's orders.</response>
-        </member>
-        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.CreatePayment(Agricultural_For_CV_Shared.Dtos.PaymentsDtos.PaymentRequestDto)">
-            <summary>
-            Creates a new payment.
-            </summary>
-            <param name="dto">The payment request data.</param>
-            <returns>The details of the created payment.</returns>
-        </member>
-        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.GetPaymentById(System.Int32)">
-            <summary>
-            Retrieves a payment by its ID.
-            </summary>
-            <param name="id">The payment ID.</param>
-        </member>
-        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.GetPaymentsByOrder(System.Int32)">
-            <summary>
-            Retrieves all payments associated with a specific order.
-            </summary>
-            <param name="orderId">The order ID.</param>
-        </member>
-        <member name="M:Agricultural_For_CV_API.Controllers.PaymentsController.UpdateStatus(System.Int32,System.String,System.String)">
-            <summary>
-            Updates the status of an existing payment.
-            </summary>
-            <param name="id">The payment ID.</param>
-            <param name="status">The new payment status (e.g., Paid, Pending, Failed).</param>
-            <param name="transactionId">Optional transaction ID for external payment gateways.</param>
         </member>
         <member name="M:Agricultural_For_CV_API.Controllers.ProductImagesController.GetImages(System.Int32)">
             <summary>

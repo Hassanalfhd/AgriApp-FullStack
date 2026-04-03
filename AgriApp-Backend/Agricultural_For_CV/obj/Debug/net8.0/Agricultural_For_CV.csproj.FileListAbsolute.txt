@@ -392,3 +392,4 @@ C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricul
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV\obj\Debug\net8.0\Agricultural_For_CV.pdb
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV\obj\Debug\net8.0\Agricultural_For_CV.genruntimeconfig.cache
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV\obj\Debug\net8.0\ref\Agricultural_For_CV.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

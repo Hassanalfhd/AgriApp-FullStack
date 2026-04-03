@@ -14,6 +14,7 @@ wwwroot\images\categories\e3491620-255b-43e6-b5ca-4906546c5a80.jpg
 wwwroot\images\categories\e4bd2dc6-c64e-44fd-bf95-73acff92e6b4.webp
 wwwroot\images\crops\1afd9bce-6dd6-481f-9e3a-a235bce5c177.webp
 wwwroot\images\crops\2827deec-b0ae-4753-97a6-46ffa2e0809b.webp
+wwwroot\images\crops\3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp
 wwwroot\images\crops\4a539cb3-32ce-41dd-9b37-76532265b831.jpg
 wwwroot\images\crops\57bb0e52-a372-4bef-87a7-db6c3f5bad29.webp
 wwwroot\images\crops\661bf099-62e1-46a0-9a0a-87241f4f7640.webp
