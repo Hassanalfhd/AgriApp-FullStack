@@ -192,6 +192,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ywgx3o9ipa"},{"Name":"integrity","Value":"sha256-4iad05MTNY9FcgrGp9d7bw2w6cWjPyLWRubgyeZvaAY="},{"Name":"label","Value":"_content/Agricultural_For_CV/images/crops/2827deec-b0ae-4753-97a6-46ffa2e0809b.webp"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6318"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00224iad05MTNY9FcgrGp9d7bw2w6cWjPyLWRubgyeZvaAY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Apr 2026 17:39:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Agricultural_For_CV/images/crops/3e0f6481-8db6-472d-9f2a-57e5f1a840b3.a85ubkogp4.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a85ubkogp4"},{"Name":"integrity","Value":"sha256-Bk/1EJ2DeKbcQzuf/Fe459CczETKbOCicA7ygyQFvn8="},{"Name":"label","Value":"_content/Agricultural_For_CV/images/crops/3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4380"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022Bk/1EJ2DeKbcQzuf/Fe459CczETKbOCicA7ygyQFvn8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Apr 2026 20:14:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Agricultural_For_CV/images/crops/3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Bk/1EJ2DeKbcQzuf/Fe459CczETKbOCicA7ygyQFvn8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4380"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022Bk/1EJ2DeKbcQzuf/Fe459CczETKbOCicA7ygyQFvn8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Apr 2026 20:14:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Agricultural_For_CV/images/crops/4a539cb3-32ce-41dd-9b37-76532265b831.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\4a539cb3-32ce-41dd-9b37-76532265b831.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

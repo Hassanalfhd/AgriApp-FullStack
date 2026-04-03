@@ -288,6 +288,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\2827deec-b0ae-4753-97a6-46ffa2e0809b.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agricultural_For_CV</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agricultural_For_CV</BasePath>
+      <RelativePath>images/crops/3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a85ubkogp4</Fingerprint>
+      <Integrity>Bk/1EJ2DeKbcQzuf/Fe459CczETKbOCicA7ygyQFvn8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\3e0f6481-8db6-472d-9f2a-57e5f1a840b3.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\crops\4a539cb3-32ce-41dd-9b37-76532265b831.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Agricultural_For_CV</SourceId>

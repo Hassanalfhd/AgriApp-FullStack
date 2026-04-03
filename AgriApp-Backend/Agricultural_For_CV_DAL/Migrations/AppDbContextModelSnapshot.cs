@@ -616,13 +616,13 @@ namespace Agricultural_For_CV_DAL.Migrations
                     b.HasOne("Agricultural_For_CV_DAL.Entities.Category", "Category")
                         .WithMany("Crops")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Agricultural_For_CV_DAL.Entities.User", "Owner")
                         .WithMany("Crops")
                         .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Category");
@@ -650,7 +650,7 @@ namespace Agricultural_For_CV_DAL.Migrations
                     b.HasOne("Agricultural_For_CV_DAL.Entities.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("User");
@@ -661,19 +661,19 @@ namespace Agricultural_For_CV_DAL.Migrations
                     b.HasOne("Agricultural_For_CV_DAL.Entities.User", "User")
                         .WithMany("OrderDetails")
                         .HasForeignKey("FarmerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Agricultural_For_CV_DAL.Entities.Order", "Order")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Agricultural_For_CV_DAL.Entities.Product", "Product")
                         .WithMany("OrderDetails")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Order");
@@ -699,19 +699,19 @@ namespace Agricultural_For_CV_DAL.Migrations
                     b.HasOne("Agricultural_For_CV_DAL.Entities.User", "User")
                         .WithMany("Product")
                         .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Agricultural_For_CV_DAL.Entities.Crop", "Crops")
                         .WithMany("Product")
                         .HasForeignKey("CropTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Agricultural_For_CV_DAL.Entities.QuantityTypes", "QuantityTypes")
                         .WithMany("Product")
                         .HasForeignKey("QuantityTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Crops");
@@ -726,7 +726,7 @@ namespace Agricultural_For_CV_DAL.Migrations
                     b.HasOne("Agricultural_For_CV_DAL.Entities.Product", "Product")
                         .WithMany("ProductsImages")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Product");

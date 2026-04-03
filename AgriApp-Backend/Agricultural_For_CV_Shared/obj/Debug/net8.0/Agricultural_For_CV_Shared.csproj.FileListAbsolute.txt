@@ -10,3 +10,16 @@ H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_
 H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\refint\Agricultural_For_CV_Shared.dll
 H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.pdb
 H:\Agricultural_For_CV\Agricultural_For_CV_Shared\obj\Debug\net8.0\ref\Agricultural_For_CV_Shared.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.deps.json
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\bin\Debug\net8.0\Agricultural_For_CV_Shared.pdb
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.csproj.AssemblyReference.cache
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.AssemblyInfoInputs.cache
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.AssemblyInfo.cs
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.csproj.CoreCompileInputs.cache
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.sourcelink.json
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\refint\Agricultural_For_CV_Shared.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\Agricultural_For_CV_Shared.pdb
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_Shared\obj\Debug\net8.0\ref\Agricultural_For_CV_Shared.dll

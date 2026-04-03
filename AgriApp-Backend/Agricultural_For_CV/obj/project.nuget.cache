@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4kLrjXylxKw=",
+  "dgSpecHash": "3h5jodDcZOw=",
   "success": true,
-  "projectFilePath": "H:\\Agricultural_For_CV\\Agricultural_For_CV\\Agricultural_For_CV.csproj",
+  "projectFilePath": "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV\\Agricultural_For_CV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hassan\\.nuget\\packages\\azure.core\\1.49.0\\azure.core.1.49.0.nupkg.sha512",
     "C:\\Users\\hassan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

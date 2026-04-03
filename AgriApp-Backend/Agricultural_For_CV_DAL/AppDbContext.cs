@@ -35,6 +35,7 @@ namespace Agricultural_For_CV_DAL
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<AuditLogs> AuditLogs { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -88,17 +89,16 @@ namespace Agricultural_For_CV_DAL
                 entity.HasOne(c => c.Owner)
                       .WithMany(u => u.Crops)
                       .HasForeignKey(c => c.OwnerId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                      .OnDelete(DeleteBehavior.NoAction);
 
 
                 // the relation with Category
                 entity.HasOne(c => c.Category)
                       .WithMany(cate => cate.Crops)
                       .HasForeignKey(c => c.CategoryId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                      .OnDelete(DeleteBehavior.NoAction);
 
             });
-
 
 
             // -------------------
@@ -114,21 +114,21 @@ namespace Agricultural_For_CV_DAL
                 entity.HasOne(p => p.Crops)
                       .WithMany(c => c.Product)
                       .HasForeignKey(p => p.CropTypeId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                      .OnDelete(DeleteBehavior.NoAction);
 
 
                 //with QuantityTypes
                 entity.HasOne(p=>p.QuantityTypes)
                       .WithMany(q =>q.Product)
                       .HasForeignKey(p=>p.QuantityTypeId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                      .OnDelete(DeleteBehavior.NoAction);
 
 
                 //with Users
                 entity.HasOne(p => p.User)
                   .WithMany(u => u.Product)
                   .HasForeignKey(p => p.CreatedBy)
-                  .OnDelete(DeleteBehavior.Cascade);
+                  .OnDelete(DeleteBehavior.NoAction);
             
             });
 
@@ -143,7 +143,7 @@ namespace Agricultural_For_CV_DAL
                 entity.HasOne(img => img.Product)
                       .WithMany(p => p.ProductsImages)
                       .HasForeignKey(img => img.ProductId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                      .OnDelete(DeleteBehavior.NoAction);
             });
 
 
@@ -166,7 +166,7 @@ namespace Agricultural_For_CV_DAL
               .HasOne(o => o.User)
               .WithMany(u=>u.Orders)
               .HasForeignKey(o => o.CustomerId)
-              .OnDelete(DeleteBehavior.Cascade);
+              .OnDelete(DeleteBehavior.NoAction);
 
 
 
@@ -176,22 +176,27 @@ namespace Agricultural_For_CV_DAL
             modelBuilder.Entity<OrderDetail>()
              .HasOne(d => d.Order)
              .WithMany(o => o.OrderDetails)
-             .HasForeignKey(d => d.OrderId);
+             .HasForeignKey(d => d.OrderId)
+             .OnDelete(DeleteBehavior.NoAction);
+
 
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(d => d.Product)
                 .WithMany(p=>p.OrderDetails)
-                .HasForeignKey(d => d.ProductId);
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(d => d.User)
                 .WithMany(u => u.OrderDetails)
-                .HasForeignKey(d => d.FarmerId);
-       
+                .HasForeignKey(d => d.FarmerId)
+                .OnDelete(DeleteBehavior.NoAction);
+            
+
             modelBuilder.Entity<OrderDetail>()
                 .Property(d =>d.Total )
                 .ValueGeneratedOnAddOrUpdate();
-
+                
 
 
 

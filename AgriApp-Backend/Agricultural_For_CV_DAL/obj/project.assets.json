@@ -3267,11 +3267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Agricultural_For_CV\\Agricultural_For_CV_DAL\\Agricultural_For_CV_DAL.csproj",
+      "projectUniqueName": "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV_DAL\\Agricultural_For_CV_DAL.csproj",
       "projectName": "Agricultural_For_CV_DAL",
-      "projectPath": "H:\\Agricultural_For_CV\\Agricultural_For_CV_DAL\\Agricultural_For_CV_DAL.csproj",
+      "projectPath": "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV_DAL\\Agricultural_For_CV_DAL.csproj",
       "packagesPath": "C:\\Users\\hassan\\.nuget\\packages\\",
-      "outputPath": "H:\\Agricultural_For_CV\\Agricultural_For_CV_DAL\\obj\\",
+      "outputPath": "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV_DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3292,8 +3292,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\Agricultural_For_CV\\Agricultural_For_CV_Shared\\Agricultural_For_CV_Shared.csproj": {
-              "projectPath": "H:\\Agricultural_For_CV\\Agricultural_For_CV_Shared\\Agricultural_For_CV_Shared.csproj"
+            "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV_Shared\\Agricultural_For_CV_Shared.csproj": {
+              "projectPath": "C:\\Users\\hassan\\Desktop\\project-github\\AgriApp-FullStack\\AgriApp-Backend\\Agricultural_For_CV_Shared\\Agricultural_For_CV_Shared.csproj"
             }
           }
         }
