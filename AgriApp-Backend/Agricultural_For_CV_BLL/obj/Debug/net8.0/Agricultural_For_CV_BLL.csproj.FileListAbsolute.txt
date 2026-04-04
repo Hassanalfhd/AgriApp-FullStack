@@ -33,3 +33,8 @@ C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricul
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\obj\Debug\net8.0\refint\Agricultural_For_CV_BLL.dll
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\obj\Debug\net8.0\Agricultural_For_CV_BLL.pdb
 C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\obj\Debug\net8.0\ref\Agricultural_For_CV_BLL.dll
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\bin\Debug\net8.0\StoredProcedures\sp_GetCategorySalesAnalysis.sql
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\bin\Debug\net8.0\StoredProcedures\sp_GetFarmerMonthlySalesReport.sql
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\bin\Debug\net8.0\StoredProcedures\sp_GetLowStockAlerts.sql
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\bin\Debug\net8.0\StoredProcedures\sp_GetSalesGrowthReport.sql
+C:\Users\hassan\Desktop\project-github\AgriApp-FullStack\AgriApp-Backend\Agricultural_For_CV_BLL\bin\Debug\net8.0\StoredProcedures\sp_GetTopFarmersReport.sql

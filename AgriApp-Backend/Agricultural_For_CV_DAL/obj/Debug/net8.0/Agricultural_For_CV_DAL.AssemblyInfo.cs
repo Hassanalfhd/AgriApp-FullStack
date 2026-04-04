@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Agricultural_For_CV_DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77442d01ebbd159512ebf3d1da406bbeb0c7e39d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbd0a7c211fe20160695d92aeba416941fb1ef63")]
 [assembly: System.Reflection.AssemblyProductAttribute("Agricultural_For_CV_DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Agricultural_For_CV_DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

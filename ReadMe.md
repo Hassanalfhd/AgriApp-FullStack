@@ -13,7 +13,7 @@
 The ecosystem is built on a **Decoupled Architecture**, ensuring high performance, maintainability, and independent scalability for both the client and the server.
 
 1.  **Frontend (AgriApp-Client):** A modern SPA built with **React 18**, utilizing a **Feature-Based Architecture** to organize domain-specific logic and improve scalability.
-2.  **Backend (AgriApp-API):** A high-performance server built with **ASP.NET Core 8** following **Clean Architecture** principles to ensure strict separation of concerns.
+2.  **Backend (AgriApp-API):** A high-performance server built with **ASP.NET Core 8** following **Layered Architecture** principles to ensure strict separation of concerns.
 
 ---
 
@@ -41,7 +41,7 @@ This repository contains two primary modules:
 
 ### **Backend Engineering**
 
-- **Clean Architecture:** Implementation of API, Business Logic (BLL), and Data Access (DAL) layers.
+- **Layred Architecture:** Implementation of API, Business Logic (BLL), and Data Access (DAL) layers.
 - **Patterns:** Result Pattern, Repository Pattern, and Unit of Work.
 - **Performance:** SQL Server optimization, Rate Limiting, and Global Error Handling.
 - **Monitoring:** Custom Middleware for profiling and request tracking.
@@ -68,11 +68,13 @@ cd AgriApp-Backend
 dotnet ef database update --project Agricultural_For_CV_DAL --startup-project Agricultural_For_CV
 dotnet run --project Agricultural_For_CV
 
+
 3️⃣ Frontend Setup
 cd AgriApp-Frontend
 npm install
 npm run dev
 ```
+---
 
 👨‍💻 Author
 **Hasan Ameen Alfahd**

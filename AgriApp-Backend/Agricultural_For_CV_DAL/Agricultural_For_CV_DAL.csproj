@@ -7,6 +7,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="StoredProcedures\sp_GetCategorySalesAnalysis.sql" />
+    <None Remove="StoredProcedures\sp_GetFarmerMonthlySalesReport.sql" />
+    <None Remove="StoredProcedures\sp_GetLowStockAlerts.sql" />
+    <None Remove="StoredProcedures\sp_GetSalesGrowthReport.sql" />
+    <None Remove="StoredProcedures\sp_GetTopFarmersReport.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="StoredProcedures\sp_GetCategorySalesAnalysis.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoredProcedures\sp_GetFarmerMonthlySalesReport.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoredProcedures\sp_GetLowStockAlerts.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoredProcedures\sp_GetSalesGrowthReport.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoredProcedures\sp_GetTopFarmersReport.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.72" />
     <PackageReference Include="MassTransit" Version="9.0.1" />
     <PackageReference Include="MassTransit.EntityFrameworkCore" Version="9.0.1" />
