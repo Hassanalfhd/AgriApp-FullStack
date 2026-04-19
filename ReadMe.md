@@ -1,7 +1,7 @@
 # 🌾 AgriApp: End-to-End Agricultural Ecosystem
 
 [![Full Stack](https://img.shields.io/badge/Full%20Stack-Dotnet%208%20%2B%20React-blue?style=for-the-badge)](https://github.com/hasan-alfahd)
-[![Architecture](https://img.shields.io/badge/Architecture-Clean%20%26%20Feature--Based-green?style=for-the-badge)](#-system-architecture)
+[![Architecture](https://img.shields.io/badge/Architecture-Layered%20%26%20Feature--Based-green?style=for-the-badge)](#-system-architecture)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 **AgriApp** is a robust, enterprise-grade platform designed to bridge the gap between farmers and consumers. It streamlines agricultural commerce through a unified system featuring role-based dashboards, real-time order tracking, and advanced administrative management.
